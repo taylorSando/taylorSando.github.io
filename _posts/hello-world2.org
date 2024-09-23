@@ -1,0 +1,10 @@
+#+TITLE: Another hello world
+#+DATE: 2024-09-22 20:01:39 -0500 
+#+JEKYLL_LAYOUT: post
+#+JEKYLL_CATEGORIES: org-mode emacs
+#+JEKYLL_TAGS: export jekyll markdown
+
+
+Hello World!
+
+
