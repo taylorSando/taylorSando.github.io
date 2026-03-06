@@ -18,39 +18,33 @@ layout: landing
 
 <div class="bio">
   <p>
-    I got my first computer at 13, taught myself HTML, and have spent the last
-    two decades building software, studying mathematics, and trying to understand
-    how systems &mdash; technical and human &mdash; actually work. I moved through
-    Visual Basic and C/C++ in high school, spent 10 years at university across
-    Psychology, History, and Computer Science, published peer-reviewed HCI research,
-    joined SkipTheDishes as a founding-year engineer, and have been consulting and
-    building ever since.
-  </p>
-  <p>
-    I'm drawn to the hard problems at the intersection of distributed state,
-    agent coordination, and making implicit knowledge explicit.
-  </p>
-</div>
-
-<h2 class="section-title">The Short Version</h2>
-<div class="bio" style="margin-top: 0;">
-  <p>
-    Born in Calgary, raised in Winnipeg. Started programming at 13 &mdash; HTML,
-    JavaScript, then C/C++ and Visual Basic by 16. Spent 10 years at the University
-    of Manitoba studying Psychology, History, and Computer Science, where I worked in
-    a behavioral research lab, TA'd psychology courses, and published peer-reviewed
-    research in the HCI Lab on spatial cognition and collaborative information
-    visualization. Discovered Clojure and Emacs in 2012 and entered the Winnipeg
-    startup scene. Was an early engineer at SkipTheDishes during its founding year.
-    Spent a decade as a technical consultant and lead engineer across fintech,
-    e-commerce, and startup infrastructure &mdash; building products on Shopify,
-    React, and GCP for clients across Canada and the US. Currently building tools
-    for auditable, event-driven agent orchestration.
+    I got my first computer at 13 in 1997, taught myself HTML, and never really
+    stopped. Two decades of building software, studying mathematics, and trying to
+    understand how systems &mdash; technical and human &mdash; actually work. I've
+    moved through C/C++ and Visual Basic in high school, a decade at university
+    across three departments, peer-reviewed HCI research, a founding-year stint at
+    SkipTheDishes, and years of freelance consulting across fintech, e-commerce,
+    and startup infrastructure. Currently building tools for auditable, event-driven
+    agent orchestration.
   </p>
 </div>
 
 <h2 class="section-title">Experience</h2>
 <div class="journey-list">
+  <div class="journey-item">
+    <div class="journey-meta">
+      <strong>Control Plane</strong>
+      <span>2024 &ndash; present</span>
+    </div>
+    <div class="journey-desc">
+      Private infrastructure for orchestrating AI coding agents with full audit
+      trails. File-system activity tracker with CRDT-based versioning (Go + SQLite),
+      multi-agent task orchestrator routing work to Claude Code, Gemini CLI, and
+      Codex with progressive autonomy controls, and a declarative configuration
+      engine generating tool-specific settings from org-mode files.
+    </div>
+  </div>
+
   <div class="journey-item">
     <div class="journey-meta">
       <strong>Cios / ReLease</strong>
@@ -62,8 +56,8 @@ layout: landing
       Exchange. Architected the frontend monorepo (React/Redux), designed
       XState-driven state machines for high-stakes claim workflows, and built
       deep audit/observability layers including the "Evidence Envelope" pattern.
-      Managed the full stack across MongoDB, Firestore, and GCP. Deel payroll
-      integration, Stripe payment processing.
+      Full stack across MongoDB, Firestore, and GCP. Deel payroll integration,
+      Stripe payment processing.
     </div>
   </div>
 
@@ -76,24 +70,27 @@ layout: landing
       <strong>Software Engineer</strong> &mdash;
       Full-stack development on Shopify ecosystem tooling and internal data
       infrastructure. Built customer data importers and internal product systems.
-      GitHub-heavy development workflow with JIRA and Harvest time tracking across
-      a small distributed team.
+      Small distributed team with JIRA and Harvest time tracking.
     </div>
   </div>
 
   <div class="journey-item">
     <div class="journey-meta">
       <strong>Freelance &amp; Contract</strong>
-      <span>2016 &ndash; 2020</span>
+      <span>2012 &ndash; 2020</span>
     </div>
     <div class="journey-desc">
       <strong>Technical Consultant</strong> &mdash;
-      Independent freelance work across multiple clients and projects. Built
-      <strong>Playbook Edge</strong> for InVision Edge and managed their Shopify
-      integrations. Developed <strong>Pray4EveryHome</strong>, a faith-based
-      community platform (2016&ndash;2017). Built MVPs and prototypes for clients
-      including PTI Corp (US) and Exchange Agency. Shopify ecosystem, React,
-      Redux &mdash; navigating the transition from jQuery to SPAs.
+      Eight years of independent consulting across multiple clients and projects.
+      Built <strong>Playbook Edge</strong> for InVision Edge and managed their
+      Shopify integrations. Developed <strong>Pray4EveryHome</strong>, a faith-based
+      community platform (2016&ndash;2017). Built MVPs and prototypes for PTI Corp
+      (US), Exchange Agency, EdgeCorp Group, and Soliton Apps. Co-founded
+      <strong>ScheduleAid</strong> at Startup Weekend. Worked with D3.js data
+      visualization, Heroku, New Relic. Built a poker bot with machine learning.
+      Active in the Winnipeg startup community through Meetup and AngelList.
+      Self-directed study in mathematics, Clojure, and functional programming
+      throughout.
     </div>
   </div>
 
@@ -106,24 +103,7 @@ layout: landing
       <strong>Early Stage Engineer</strong> &mdash;
       Part of the founding engineering team during the company's first year.
       Built initial platform features through early exponential growth. Mobile
-      deep linking, TechFutures accelerator participant, Microsoft BizSpark
-      program.
-    </div>
-  </div>
-
-  <div class="journey-item">
-    <div class="journey-meta">
-      <strong>Freelance &amp; Startups</strong>
-      <span>2012 &ndash; 2016</span>
-    </div>
-    <div class="journey-desc">
-      Entered the Winnipeg startup scene after leaving university. Co-founded
-      <strong>ScheduleAid</strong> at Startup Weekend. Contract work across web
-      development, D3.js data visualization, and early-stage product builds &mdash;
-      clients through Elance, EdgeCorp Group, Soliton Apps, and local referrals.
-      Deployed on Heroku with New Relic monitoring. Self-directed study in
-      mathematics, Clojure, and functional programming. Active in Meetup and
-      AngelList communities.
+      deep linking, TechFutures accelerator, Microsoft BizSpark program.
     </div>
   </div>
 
@@ -134,11 +114,13 @@ layout: landing
     </div>
     <div class="journey-desc">
       Pivoted to Computer Science and joined the <strong>HCI Lab</strong> under
-      Dr. Pourang Irani. Research focused on spatial cognition, 3D data
-      visualization, and collaborative information systems. Collaborated with
-      researchers at University of Victoria and University of Alberta. Submitted
-      work to CHI and published at ACM APGV and IEEE PacificVis. Stayed an extra
-      year to maintain student status for university positions.
+      Dr. Pourang Irani. Research on spatial cognition, 3D data visualization,
+      and collaborative information systems. Collaborated with researchers at
+      University of Victoria and University of Alberta. Submitted work to CHI
+      and published at ACM APGV and IEEE PacificVis. Built
+      <strong>TheHockeyPedia</strong> &mdash; an early hockey data project in
+      Python and MySQL. Stayed an extra year to maintain student status for
+      university positions.
     </div>
   </div>
 
@@ -173,52 +155,49 @@ layout: landing
   </ul>
 </div>
 
-<h2 class="section-title">What I'm Working On</h2>
+<h2 class="section-title">Side Projects</h2>
 <div class="bio" style="margin-top: 0;">
   <p>
-    My current focus is the <strong>Control Plane</strong>: a private infrastructure
-    for orchestrating AI coding agents with full audit trails. It includes a
-    file-system activity tracker with CRDT-based versioning (Go + SQLite), a
-    multi-agent task orchestrator that routes work to Claude Code, Gemini CLI,
-    and Codex with progressive autonomy controls, and a declarative configuration
-    engine that generates tool-specific settings from org-mode files.
+    <strong>NHL Data Graph</strong> &mdash; Trade lineage tracking, game/player
+    ingestion, and content-ready analytics. A continuation of hockey data work
+    that started with TheHockeyPedia in 2008.
   </p>
   <p>
-    Side projects: an <strong>NHL Data Graph</strong> tracking trade lineage and
-    player analytics, a <strong>Spotify playlist manager</strong> that auto-removes
-    played songs, and a local <strong>voice tools</strong> system running
-    faster-whisper on a RTX 3090 for on-device speech-to-text.
+    <strong>Sandolab</strong> &mdash; Spotify playlist manager that tracks unplayed
+    songs and auto-removes them when played. Next.js + Vercel.
   </p>
   <p>
-    The underlying conviction is simple: state should be derived from events, text files
-    are the universal interface for agent coordination, and autonomy without audit trails
-    is dangerous.
+    <strong>Voice Tools</strong> &mdash; Local speech-to-text and text-to-speech
+    running faster-whisper on a RTX 3090. Entirely on-device, integrated into
+    Emacs.
   </p>
 </div>
 
 <h2 class="section-title">Background</h2>
 <div class="bio" style="margin-top: 0;">
   <p>
-    I got my first computer at 13 in 1997 &mdash; HTML and JavaScript, then Starcraft
-    and Battle.net. Learned Visual Basic and C/C++ by 16, tried 3D Max, worked at a
-    call center at 17. Spent a decade in university bouncing between departments before
-    finding my way to computer science research. Discovered Clojure and Emacs in 2012
-    and have been building in that tradition ever since &mdash; TypeScript for the web,
+    Born in Calgary, raised in Winnipeg. Got my first computer at 13 &mdash; HTML
+    and JavaScript, then Starcraft and Battle.net. Learned Visual Basic and C/C++
+    by 16. Worked at a call center at 17. Spent a decade at the University of
+    Manitoba bouncing between Psychology, History, and Computer Science before
+    finding my way to HCI research. Discovered Clojure and Emacs in 2012 and
+    have been building in that tradition ever since &mdash; TypeScript for the web,
     Go for systems, org-mode for everything else.
   </p>
   <p>
-    I played organized hockey from age 8 to 31 and recreational hockey at Canlan
-    through my twenties. I've been a self-directed student of mathematics &mdash;
-    abstract algebra, differential geometry, real analysis &mdash; since 2015. I went
-    through a long Austrian economics phase (Mises, Hayek, Peter Schiff) that I've
-    mostly outgrown but don't regret. I maintain a long-running stream-of-consciousness
-    knowledge base covering everything from epistemology and social cognition to
-    category theory and event-driven architecture &mdash; an ongoing experiment in
-    making thinking visible and queryable.
+    I played organized hockey from age 8 through high school, then recreational
+    hockey at Canlan through my twenties until retiring at 31. I've been a
+    self-directed student of mathematics &mdash; abstract algebra, differential
+    geometry, real analysis &mdash; since 2015. I went through a long Austrian
+    economics phase (Mises, Hayek, Peter Schiff) that I've mostly outgrown but
+    don't regret. I maintain a long-running stream-of-consciousness knowledge base
+    covering everything from epistemology and social cognition to category theory
+    and event-driven architecture &mdash; an ongoing experiment in making thinking
+    visible and queryable.
   </p>
   <p>
-    I believe that writing is how you find out what you actually think, and that the gap
-    between knowing and doing is where most interesting problems live.
+    I believe that writing is how you find out what you actually think, and that
+    the gap between knowing and doing is where most interesting problems live.
   </p>
 </div>
 
