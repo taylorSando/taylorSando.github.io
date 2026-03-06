@@ -87,6 +87,38 @@ body {
   text-align: left;
 }
 
+.section-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-main);
+  margin: 2.5rem 0 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+.journey-list {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.journey-item {
+  margin-bottom: 1rem;
+}
+
+.journey-item strong {
+  color: var(--text-main);
+  display: block;
+}
+
+.journey-item span {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
 .links {
   display: flex;
   flex-direction: column;
