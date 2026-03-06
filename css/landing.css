@@ -212,6 +212,25 @@ body {
   font-weight: 500;
 }
 
+.quotes {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.quotes blockquote {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.7;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  border-left: 2px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+
+.quotes blockquote:last-child {
+  margin-bottom: 0;
+}
+
 footer {
   margin-top: 5rem;
   padding-top: 2rem;
