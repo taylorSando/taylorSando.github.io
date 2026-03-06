@@ -9,7 +9,7 @@
 title: Taylor Sando Homepage
 email: taylor.sando@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Software Engineer & Systems Architect focusing on auditable AI agents and distributed systems.
+  Software engineer and systems thinker based in Winnipeg. Building tools for auditable agent orchestration, event-driven architecture, and making implicit knowledge explicit.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.taylorsando.com" # the base hostname & protocol for your site
 twitter_username: TaylorSando16

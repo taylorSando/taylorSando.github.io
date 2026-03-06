@@ -4,60 +4,78 @@ layout: landing
 
 <header class="header">
   <h1>Taylor Sando</h1>
-  <p>Software Architect & Systems Engineer</p>
+  <p>Software Engineer &middot; Systems Thinker &middot; Winnipeg</p>
 </header>
 
 <div class="links">
+  <a href="https://www.linkedin.com/in/taylor-sando-8aa3a7265/" class="btn btn-outline">LinkedIn</a>
   {% if site.github_username %}
-  <a href="https://github.com/{{ site.github_username }}" class="btn btn-outline">
-    GitHub
-  </a>
+  <a href="https://github.com/{{ site.github_username }}" class="btn btn-outline">GitHub</a>
   {% endif %}
-
-  <a href="https://www.linkedin.com/in/taylor-sando-8aa3a7265/" class="btn btn-outline">
-    LinkedIn
-  </a>
-
-  {% if site.twitter_username %}
-  <a href="https://twitter.com/{{ site.twitter_username }}" class="btn btn-outline">
-    X (Twitter)
-  </a>
-  {% endif %}
-
-  <a href="https://sandolab.xyz" class="btn btn-outline">
-    Sandolab
-  </a>
+  <a href="https://sandolab.xyz" class="btn btn-outline">Sandolab</a>
+  <a href="mailto:taylor.sando@gmail.com" class="btn btn-outline">Email</a>
 </div>
 
 <div class="bio">
   <p>
-    I build systems at the intersection of software engineering and autonomous agency. 
-    I view code not just as logic, but as a capture of the intentions behind actions—a philosophy 
-    I explore through a massive, long-running project in computable thinking and event-driven modeling.
+    I've been writing code since I taught myself HTML at 13 and have spent the last
+    two decades building software, studying mathematics, and trying to understand
+    how systems &mdash; technical and human &mdash; actually work. I'm drawn to the
+    hard problems at the intersection of distributed state, agent coordination, and
+    making implicit knowledge explicit.
   </p>
 </div>
 
-<h2 class="section-title">Selected Experience</h2>
+<h2 class="section-title">The Short Version</h2>
+<div class="bio" style="margin-top: 0;">
+  <p>
+    Born in Calgary, raised in Winnipeg. Studied Computer Science and Psychology at
+    the University of Manitoba, where I published peer-reviewed research in the HCI Lab
+    on spatial cognition and collaborative information visualization. Was an early
+    engineer at SkipTheDishes during its founding year. Spent the better part of a decade
+    as a technical consultant and lead engineer across fintech, e-commerce, and startup
+    infrastructure. Currently building tools for auditable, event-driven agent orchestration.
+  </p>
+</div>
+
+<h2 class="section-title">Professional Experience</h2>
 <div class="journey-list">
   <div class="journey-item">
     <div class="journey-meta">
       <strong>Cios / ReLease</strong>
-      <span>2021 – 2026</span>
+      <span>2021 &ndash; 2026</span>
     </div>
     <div class="journey-desc">
-      <strong>Lead Engineer</strong><br/>
-      Architected complex frontend monorepos, built deep audit/observability layers using the "Evidence Envelope" pattern, and pioneered the use of XState-driven state machines for high-stakes fintech workflows.
+      <strong>Lead Engineer</strong> &mdash;
+      Rent deposit insurance platform. Architected the frontend monorepo (React/Redux),
+      designed XState-driven state machines for high-stakes claim workflows, and built
+      deep audit/observability layers including the "Evidence Envelope" pattern. Managed
+      the full stack across MongoDB, Firestore, and GCP.
     </div>
   </div>
 
   <div class="journey-item">
     <div class="journey-meta">
-      <strong>Bold Commerce &<br/>Invision Edge</strong>
-      <span>2016 – 2020</span>
+      <strong>Datomar Labs</strong>
+      <span>2020 &ndash; 2021</span>
     </div>
     <div class="journey-desc">
-      <strong>Technical Consultant / Engineer</strong><br/>
-      Navigated critical migrations, high-growth Shopify ecosystem expansions, and complex architecture updates during a pivotal era of the modern frontend.
+      <strong>Software Engineer</strong> &mdash;
+      Full-stack development and architecture consulting. Worked on scaling internal
+      tooling and data infrastructure.
+    </div>
+  </div>
+
+  <div class="journey-item">
+    <div class="journey-meta">
+      <strong>Bold Commerce &amp;<br/>Invision Edge</strong>
+      <span>2016 &ndash; 2020</span>
+    </div>
+    <div class="journey-desc">
+      <strong>Technical Consultant</strong> &mdash;
+      Navigated critical migrations, Shopify ecosystem integrations, and complex
+      architecture updates during the modern frontend's most turbulent era.
+      Freelance and contract work across multiple clients.
     </div>
   </div>
 
@@ -67,34 +85,91 @@ layout: landing
       <span>2014</span>
     </div>
     <div class="journey-desc">
-      <strong>Early Stage Engineer</strong><br/>
-      Contributed to the initial platform development "from the beginning" during the founding year, scaling the system to meet early exponential growth targets.
+      <strong>Early Stage Engineer</strong> &mdash;
+      Part of the founding engineering team during the company's first year,
+      building the initial platform through early exponential growth.
     </div>
   </div>
 
   <div class="journey-item">
     <div class="journey-meta">
-      <strong>HCI Lab, University of Manitoba</strong>
-      <span>B.Sc. Computer Science (Honours)</span>
+      <strong>Freelance &amp; Startups</strong>
+      <span>2012 &ndash; 2016</span>
     </div>
     <div class="journey-desc">
-      <strong>Research Assistant</strong><br/>
-      Published peer-reviewed research on spatial cognition, 3D data visualization, and collaborative information linking (IEEE PacificVis, ACM APGV). This academic foundation heavily informs my current categorical approach to software design.
+      Winnipeg startup scene. Co-founded ScheduleAid. Contract work across
+      web development, data visualization, and early-stage product builds.
+      Self-directed study in mathematics, Clojure, and functional programming.
     </div>
   </div>
 </div>
 
-<h2 class="section-title">Systems & Philosophy</h2>
+<h2 class="section-title">Research &amp; Education</h2>
+<div class="journey-list">
+  <div class="journey-item">
+    <div class="journey-meta">
+      <strong>University of Manitoba</strong>
+      <span>B.Sc. Computer Science (Honours)</span>
+    </div>
+    <div class="journey-desc">
+      Double focus in Computer Science and Psychology. Research assistant in the
+      <strong>HCI Lab</strong> under Dr. Pourang Irani, studying spatial cognition,
+      3D data visualization, and collaborative information systems.
+    </div>
+  </div>
+</div>
+
+<div class="publications">
+  <h3 class="subsection-title">Publications</h3>
+  <ul>
+    <li>
+      <em>Effects of animation, user-controlled interactions, and multiple static views
+      in understanding 3D structures</em> (2009) &mdash; ACM APGV
+    </li>
+    <li>
+      <em>Collaborative Information Linking: Bridging Knowledge Gaps between Users
+      by Linking across Applications</em> (2011) &mdash; IEEE PacificVis
+    </li>
+    <li>
+      <em>Impact of group size on spatial structure understanding tasks</em> (2011)
+    </li>
+  </ul>
+</div>
+
+<h2 class="section-title">What I'm Working On</h2>
 <div class="bio" style="margin-top: 0;">
   <p>
-    I operate a high-autonomy local infrastructure, including an 8-monitor workstation and 
-    a custom Thunderbolt eGPU cluster (RTX 3090) for local AI experimentation. 
+    My current focus is the <strong>Control Plane</strong>: a private infrastructure
+    for orchestrating AI coding agents with full audit trails. It includes a file-system
+    activity tracker with CRDT-based versioning, a multi-agent task orchestrator with
+    progressive autonomy controls, and a declarative configuration engine that generates
+    tool-specific settings from org-mode files.
   </p>
   <p>
-    I maintain a near 800k-word stream-of-consciousness knowledge base—an ongoing experiment in "computable thinking." My current focus is the <strong>Control Plane</strong>: a private infrastructure for orchestrating auditable, event-driven engineering agents.
+    The underlying conviction is simple: state should be derived from events, text files
+    are the universal interface for agent coordination, and autonomy without audit trails
+    is dangerous.
+  </p>
+</div>
+
+<h2 class="section-title">Background</h2>
+<div class="bio" style="margin-top: 0;">
+  <p>
+    I started programming at 13 with HTML and JavaScript, moved through C/C++
+    and Visual Basic in high school, discovered Clojure and Emacs in 2012, and
+    have been building in that tradition ever since &mdash; TypeScript for the web,
+    Go for systems, org-mode for everything else.
+  </p>
+  <p>
+    I played organized hockey from age 8 to 31. I've been a self-directed student
+    of mathematics (algebra, geometry, real analysis) since 2015. I maintain a
+    long-running stream-of-consciousness knowledge base &mdash; an ongoing experiment
+    in making thinking visible and queryable. I believe that writing is how you find
+    out what you actually think, and that the gap between knowing and doing is where
+    most interesting problems live.
   </p>
 </div>
 
 <footer>
-  <p>© {{ site.time | date: "%Y" }} Taylor Sando</p>
+  <p>&copy; {{ site.time | date: "%Y" }} Taylor Sando &middot; Winnipeg, Canada</p>
 </footer>
