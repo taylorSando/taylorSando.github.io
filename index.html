@@ -1,47 +1,39 @@
 ---
-layout: default
+layout: landing
 ---
 
-<div class="home">
+<header style="margin-bottom: 24px;">
+  <h1 style="margin: 0; font-size: 2.5rem; font-weight: 800; color: #111;">Taylor Sando</h1>
+  <p style="margin: 8px 0 0; color: #666; font-size: 1.1rem; font-weight: 500;">Software Engineer & Systems Architect</p>
+</header>
 
-  <div class="profile-header" style="text-align: center; padding: 40px 0;">
-    <h1 class="page-heading">Taylor Sando</h1>
-    <p class="rss-subscribe">Software Engineer & Systems Architect</p>
-    
-    <div class="social-links" style="margin-top: 30px; font-size: 1.2em;">
-      <ul class="social-media-list" style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 25px;">
-        {% if site.github_username %}
-        <li>
-          <a href="https://github.com/{{ site.github_username }}" style="text-decoration: none;">
-            {% include icon-github.html username=site.github_username %} GitHub
-          </a>
-        </li>
-        {% endif %}
-
-        {% if site.twitter_username %}
-        <li>
-          <a href="https://twitter.com/{{ site.twitter_username }}" style="text-decoration: none;">
-            {% include icon-twitter.html username=site.twitter_username %} X (Twitter)
-          </a>
-        </li>
-        {% endif %}
-        
-        <li>
-          <a href="https://sandolab.xyz" style="text-decoration: none;">
-            <svg viewBox="0 0 16 16" width="16" height="16" style="vertical-align: middle;"><path fill="#424242" d="M8 0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm0 1.5c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5 6.5-2.91 6.5-6.5-2.91-6.5-6.5-6.5zM8 4a4 4 0 110 8 4 4 0 010-8z"/></svg> Sandolab
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
-
-  <div class="about-section" style="max-width: 600px; margin: 0 auto; line-height: 1.6;">
+<main>
+  <div style="margin: 32px 0; line-height: 1.6; color: #444; font-size: 1.05rem;">
     <p>
       I build systems, tools, and experiments at the intersection of software engineering and autonomous agency. 
       Currently focused on infrastructure for auditable AI agents and distributed system modeling.
     </p>
   </div>
 
-</div>
+  <div style="display: flex; flex-direction: column; gap: 12px;">
+    {% if site.github_username %}
+    <a href="https://github.com/{{ site.github_username }}" style="display: block; padding: 14px; background: #24292e; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.1s;">
+      GitHub
+    </a>
+    {% endif %}
+
+    {% if site.twitter_username %}
+    <a href="https://twitter.com/{{ site.twitter_username }}" style="display: block; padding: 14px; background: #1da1f2; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.1s;">
+      X (Twitter)
+    </a>
+    {% endif %}
+
+    <a href="https://sandolab.xyz" style="display: block; padding: 14px; background: #fff; color: #111; text-decoration: none; border: 2px solid #111; border-radius: 8px; font-weight: 600; transition: transform 0.1s;">
+      Sandolab
+    </a>
+  </div>
+</main>
+
+<footer style="margin-top: 40px; font-size: 0.9rem; color: #888;">
+  <p>© {{ site.time | date: "%Y" }} Taylor Sando</p>
+</footer>
