@@ -4,20 +4,44 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="profile-header" style="text-align: center; padding: 40px 0;">
+    <h1 class="page-heading">Taylor Sando</h1>
+    <p class="rss-subscribe">Software Engineer & Systems Architect</p>
+    
+    <div class="social-links" style="margin-top: 30px; font-size: 1.2em;">
+      <ul class="social-media-list" style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 25px;">
+        {% if site.github_username %}
+        <li>
+          <a href="https://github.com/{{ site.github_username }}" style="text-decoration: none;">
+            {% include icon-github.html username=site.github_username %} GitHub
+          </a>
+        </li>
+        {% endif %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {% if site.twitter_username %}
+        <li>
+          <a href="https://twitter.com/{{ site.twitter_username }}" style="text-decoration: none;">
+            {% include icon-twitter.html username=site.twitter_username %} X (Twitter)
+          </a>
+        </li>
+        {% endif %}
+        
+        <li>
+          <a href="https://sandolab.xyz" style="text-decoration: none;">
+            <svg viewBox="0 0 16 16" width="16" height="16" style="vertical-align: middle;"><path fill="#424242" d="M8 0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm0 1.5c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5 6.5-2.91 6.5-6.5-2.91-6.5-6.5-6.5zM8 4a4 4 0 110 8 4 4 0 010-8z"/></svg> Sandolab
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
 
-  <p class="rss-subscribe">subscribe - test <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="about-section" style="max-width: 600px; margin: 0 auto; line-height: 1.6;">
+    <p>
+      I build systems, tools, and experiments at the intersection of software engineering and autonomous agency. 
+      Currently focused on infrastructure for auditable AI agents and distributed system modeling.
+    </p>
+  </div>
 
 </div>
