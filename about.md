@@ -1,15 +1,65 @@
 ---
-layout: page
-title: About
+layout: writing
+title: "From Animal Cognition to Agent Orchestration"
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+In 2005, I was in a psychology lab at the University of Manitoba, watching Siamese fighting fish through a one-way mirror and trying to build a virtual model of their territorial behavior. A few years later, I was running pigeon operant conditioning experiments with a Python framework I had written myself, timing reinforcement schedules and recording how the birds updated their behavior in response to changing contingencies. The question driving both projects was deceptively simple: how does an agent form beliefs about its environment, and how does it decide what to do next?
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+I did not know it at the time, but that question would become the throughline of my entire career.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+---
+
+I graduated with a B.Sc. Honours in Psychology in 2007, First Class, from the University of Manitoba. My honours work was in behavioral research under Joseph Pear, James Hare, Roger Wilson, and Gary Anderson. The training was classical: experimental design, statistical inference, operant conditioning, ethology. What I absorbed, more than any specific finding, was a way of thinking. In the animal behavior lab, you learn that you cannot ask an organism what it believes. You can only observe what it does, manipulate its environment, and infer the internal model from the behavioral output. Belief is not what the animal says. Belief is what the animal does when the contingencies change.
+
+This sounds obvious until you try to apply it rigorously. Most of what we call "knowledge" in everyday life is verbal behavior disconnected from action. I can say I believe exercise is important while sitting on a couch. I can say I understand a codebase while being unable to predict what happens when I change a function. The psychology training taught me to distrust declarations and attend to behavior. As I wrote years later in a private journal: "If true belief is reflected in behavior, then true knowing must also be reflected in behavior. Simply 'knowing' that you shouldn't do something doesn't really mean a whole lot."
+
+That insight has a surprisingly direct application to software systems. A test suite is a set of behavioral assertions about a codebase. When a test passes, it is not declaring truth. It is demonstrating that, under specific conditions, the system behaves in a way consistent with the test author's beliefs at the time the test was written. The test is an agent with a model. That model can go stale. The system can evolve past it. A passing test is silent, not correct -- silence only implies consent if you verify the agent is still paying attention.
+
+---
+
+After psychology, I pivoted into Computer Science and landed in Pourang Irani's Human-Computer Interaction lab. This was a different kind of research -- building interactive 3D systems, running experiments on spatial cognition and text entry, submitting to CHI (the premier HCI conference). But the core question was the same, translated into a new domain: how do humans form mental models of the systems they interact with, and how do those models break down?
+
+HCI research taught me something that pure psychology did not: the interface is not a window into the system. The interface is a second system, with its own logic, and the user builds a model of the interface, not of the underlying computation. When those two models diverge -- when the user's mental model of what the button does differs from what the code actually executes -- you get errors that no amount of debugging the backend will fix. The problem is not in the code. The problem is in the gap between two models of the same reality.
+
+This is, I would later realize, the fundamental problem of multi-agent systems. Not communication failure in the Shannon sense -- bits getting lost in transit. But model divergence: two agents operating on the same system with incompatible assumptions about how it works. In HCI, the agents are a human and a computer. In software engineering, the agents are a spec, an implementation, and a test suite. In the current AI landscape, the agents are a human developer, a Claude session, a Gemini session, and a codebase that all three are modifying concurrently. The git merge is the easy part. Reconciling the assumptions is the hard part.
+
+---
+
+I left academia in 2012 after a decade at the university. The honest version: I spent ten years accumulating two degrees, a network of mentors, several publications, and a slowly crystallizing dissatisfaction with the academic path. I had no interest in the credentialing game for its own sake. What I wanted was to understand how things worked, and I had reached the point where building software seemed like a faster feedback loop than writing grant proposals.
+
+What followed was a winding path through the Winnipeg startup scene. I was an early developer at SkipTheDishes in 2014, before it became one of Canada's biggest food delivery acquisitions. I built a business strategy planning application in Clojure and Datomic for a client called inVision Edge -- my longest-running engagement, spanning six years. I worked on conversational AI platforms, Shopify integrations, tractor dealer backends in Go and Postgres. I freelanced. I consulted. I calculated monthly minimums and six-month runways. The work was varied and often precarious, but it gave me something the academy never did: rapid iteration across wildly different problem domains.
+
+Through all of it, I kept studying. Not for credentials -- for the compulsive need to understand. I taught myself real analysis from Rudin, worked through category theory and abstract algebra, read differential geometry (Spivak), studied homotopy type theory, information theory, proof theory. The math was never instrumental. I was not preparing for a job interview. I was trying to understand the deep structures that generate surface-level complexity -- the same impulse that had me watching fish through one-way mirrors a decade earlier. Functors are structure-preserving maps between categories. Reinforcement schedules are structure-preserving maps between contingencies and behavior. The abstraction is the same. The substrates change.
+
+Alongside the math, I was reading across disciplines and writing constantly. A private stream-of-consciousness journal that I maintained for nearly ten years became a laboratory for ideas. I worked through Veblen on status competition, Taleb on fragility, Dennett on consciousness, Piaget on how children internalize rules before they can articulate them, evolutionary psychology on the cognitive substrate of religious belief. The journal was not organized. It was not meant to be read. It was the place where I discovered what I actually thought by writing it down and arguing with myself about whether it held up.
+
+One thread kept recurring across all of it: the question of how agents -- biological, human, computational -- navigate a world they cannot fully understand. How do you form beliefs with incomplete information? How do you update those beliefs when evidence contradicts them? How do you coordinate with other agents whose models of the same reality differ from yours? This was the question in the psychology lab. It was the question in the HCI research. It was the question in every software architecture decision I ever made.
+
+---
+
+In 2023, I co-founded a rent deposit insurance company called ReLease. We built a React and Redux frontend monorepo with MongoDB and Firestore on the backend. I designed state machine workflows using XState, built an audit and observability layer I called the Evidence Envelope pattern, and structured the system around event sourcing -- the principle that current state is a projection over a stream of events, not a thing stored directly.
+
+That principle did not come from a software architecture textbook. It came from the psychology lab. In operant conditioning, the current behavior of the organism is not a fixed property. It is the cumulative result of every reinforcement and punishment event in the organism's history. Change the history, and you change the behavior. The "state" of the organism is not stored anywhere. It is derived from the event stream. When I first encountered event sourcing in software, it felt like coming home.
+
+ReLease is winding down now. But the architectural thinking it crystallized led me to what I am building today: a system I call the Control Plane. It is an infrastructure for coordinating AI coding agents -- Claude, Gemini, Codex, others -- with full audit trails, progressive autonomy, and a shared model of the system they are working on. There is a file-watching daemon (Mesh) that captures every change with CRDT-based versioning. There is an orchestrator that routes tasks to the right agent based on a three-tier system: explicit tags first, keyword heuristics second, LLM triage for ambiguity. There is a declarative permission engine (OCC) that generates tool-specific configurations from a single set of org-mode files. There is a console for monitoring it all.
+
+But the most unusual artifact in the system is a file called model.org. It is a living, falsifiable model of my beliefs about how the system works. Each claim has a confidence score, a last-revision date, and links to the evidence and hypotheses that support or challenge it. "Text files are the universal interface for agent coordination" -- confidence 0.9. "State should be derived from events, not stored directly" -- confidence 0.7. "Merging understanding is harder than merging code" -- confidence 0.6. There are open unknowns with explicit labels: "How do you formally specify 'the system works correctly'?" "How do you merge divergent agent models?" "What metrics are actually derivable from the event stream?"
+
+There is a hypothesis-probe-build learning loop. A hypothesis proposes a belief. A probe tests it. A build implements the conclusion. If a probe refutes the hypothesis, the confidence score drops and the model updates. If three probes converge on a conclusion, the hypothesis graduates to a claim. The revision history is preserved. You can trace the chain of reasoning backward from any current belief to the observations that produced it.
+
+This is not a project management system. It is not a wiki. It is the scientific method applied to software engineering. And the reason I built it -- the reason it felt natural and necessary rather than elaborate and strange -- is that I spent my formative years in a discipline that takes belief formation seriously. Psychology does not let you get away with unstated assumptions. You operationalize your terms. You specify your predictions before you run the experiment. You log your methodology so that someone else -- or your future self -- can evaluate whether the conclusions follow from the evidence.
+
+---
+
+I am not a psychologist who became a programmer. I am someone who has been asking the same question for twenty years, in different contexts, with increasingly powerful tools. How does an agent form a model of its world? How does it update that model when the world changes? How do multiple agents, each with their own partial and potentially wrong models, coordinate well enough to get something done?
+
+In the psychology lab, the agents were fish and pigeons and the models were inferred from lever presses and territorial displays. In HCI research, the agents were humans and computers and the models were inferred from task completion times and error rates. In industry, the agents were developers and codebases and the models were inferred from git logs and bug reports. Now, the agents are LLMs with filesystem access, and the models are explicit -- written in plain text, versioned in git, tracked with confidence scores, and updated through a formal revision protocol.
+
+The tools have changed enormously. The question has not changed at all.
+
+I maintain a living model of my beliefs because I learned, watching animals in a lab two decades ago, that the alternative is operating on cached assumptions that may have been wrong when they were formed and have certainly decayed since. I build audit trails because I learned, doing HCI research, that the gap between what an agent thinks the system does and what the system actually does is where every meaningful failure lives. I design for progressive autonomy -- start supervised, earn trust -- because I learned, building software for a dozen different companies, that premature delegation without feedback loops is how systems silently diverge from intent.
+
+The through-line is not a career narrative. It is an epistemological commitment: take your own beliefs seriously enough to write them down, assign them confidence levels, and revise them when the evidence changes. Most people, and most software systems, run on unexamined defaults. The interesting work happens when you make the defaults explicit and start testing them.
+
+That is what I am building. That is what I have always been building.

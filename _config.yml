@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Taylor Sando Homepage
+title: Taylor Sando
 email: taylor.sando@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Software engineer and systems thinker based in Winnipeg. Building tools for auditable agent orchestration, event-driven architecture, and making implicit knowledge explicit.
+  I help engineering teams navigate AI-augmented development. Architecture reviews, agent orchestration strategy, and system design. Based in Winnipeg.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.taylorsando.com" # the base hostname & protocol for your site
-twitter_username: TaylorSando16
+twitter_username: taylorSando16
 github_username:  taylorSando
 
 # Build settings

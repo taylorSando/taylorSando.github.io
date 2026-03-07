@@ -4,7 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description | strip_html | strip_newlines | truncate: 160 }}">
     <title>{{ site.title }}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description | strip_html | strip_newlines | truncate: 200 }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>T</text></svg>">
+
     <link rel="stylesheet" href="{{ "/css/landing.css" | prepend: site.baseurl }}">
     {% if site.google_analytics %}
       {% include google-analytics.html %}
@@ -12,9 +23,9 @@
   </head>
   <body>
     <div class="landing-container">
-      <div class="content-wrapper">
+      <main class="content-wrapper">
         {{ content }}
-      </div>
+      </main>
     </div>
   </body>
 </html>

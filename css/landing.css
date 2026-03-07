@@ -3,7 +3,7 @@
   --bg-color: #fafafa;
   --text-main: #171717;
   --text-muted: #525252;
-  --text-light: #a3a3a3;
+  --text-light: #737373;
   --accent-color: #2563eb;
   --border-color: #e5e7eb;
   --card-bg: #ffffff;
@@ -78,6 +78,14 @@ body {
   font-size: 1.125rem;
 }
 
+.header .positioning {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-main);
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
 /* Horizontal links under header */
 .links {
   display: flex;
@@ -106,6 +114,23 @@ body {
   border-color: var(--text-main);
 }
 
+.btn:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.btn-cta {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+  font-weight: 600;
+}
+
+.btn-cta:hover {
+  background-color: var(--text-main);
+  border-color: var(--text-main);
+}
+
 .bio {
   margin-bottom: 3rem;
   color: var(--text-main);
@@ -115,6 +140,10 @@ body {
 
 .bio p {
   margin-bottom: 1.5rem;
+}
+
+.bio-flush {
+  margin-top: 0;
 }
 
 .section-title {
@@ -212,23 +241,140 @@ body {
   font-weight: 500;
 }
 
-.quotes {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+/* Services */
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.quotes blockquote {
-  color: var(--text-muted);
+.service-item h3 {
   font-size: 1.05rem;
-  font-style: italic;
-  line-height: 1.7;
-  padding: 0.75rem 0 0.75rem 1.5rem;
-  border-left: 2px solid var(--border-color);
-  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
 }
 
-.quotes blockquote:last-child {
-  margin-bottom: 0;
+.service-item p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Writing list */
+.writing-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.writing-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.writing-item:hover .writing-title {
+  color: var(--accent-color);
+}
+
+.writing-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.writing-date {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+/* Text link */
+.text-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* Writing layout (posts + about) */
+.back-nav {
+  margin-bottom: 2rem;
+}
+
+.back-nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.back-nav a:hover {
+  color: var(--text-main);
+}
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.post-meta {
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+.post-body {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-main);
+}
+
+.post-body p {
+  margin-bottom: 1.5rem;
+}
+
+.post-body h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1rem;
+  color: var(--text-main);
+}
+
+.post-body strong {
+  font-weight: 600;
+}
+
+.post-body em {
+  font-style: italic;
+}
+
+.post-body code {
+  font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, monospace;
+  font-size: 0.9em;
+  background-color: var(--border-color);
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+}
+
+.post-body hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 3rem 0;
 }
 
 footer {

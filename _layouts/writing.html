@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+    <title>{{ page.title }} - {{ site.title }}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 200 }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ page.url | prepend: site.url }}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>T</text></svg>">
+
+    <link rel="stylesheet" href="{{ "/css/landing.css" | prepend: site.baseurl }}">
+  </head>
+  <body>
+    <div class="landing-container">
+      <main class="content-wrapper">
+        <nav class="back-nav">
+          <a href="{{ "/" | prepend: site.baseurl }}">&larr; Taylor Sando</a>
+        </nav>
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            {% if page.date %}
+            <p class="post-meta">{{ page.date | date: "%B %Y" }}</p>
+            {% endif %}
+          </header>
+          <div class="post-body">
+            {{ content }}
+          </div>
+        </article>
+        <footer>
+          <p>&copy; {{ site.time | date: "%Y" }} Taylor Sando &middot; Winnipeg, Canada</p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

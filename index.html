@@ -4,29 +4,65 @@ layout: landing
 
 <header class="header">
   <h1>Taylor Sando</h1>
-  <p>Software Engineer &middot; Systems Thinker &middot; Winnipeg</p>
+  <p class="positioning">I help engineering teams navigate AI-augmented development &mdash;
+    architecture reviews, agent orchestration, and system design.
+    I can look at a system and tell you where it breaks, what&rsquo;s missing,
+    and how the pieces should fit together.</p>
 </header>
 
 <div class="links">
+  <a href="mailto:consulting@taylorsando.com" class="btn btn-cta">Let&rsquo;s Talk</a>
   <a href="https://www.linkedin.com/in/taylor-sando-8aa3a7265/" class="btn btn-outline">LinkedIn</a>
   {% if site.github_username %}
   <a href="https://github.com/{{ site.github_username }}" class="btn btn-outline">GitHub</a>
   {% endif %}
   <a href="https://sandolab.xyz" class="btn btn-outline">Sandolab</a>
-  <a href="mailto:consulting@taylorsando.com" class="btn btn-outline">Email</a>
 </div>
 
 <div class="bio">
   <p>
-    I started coding at about 13, taught myself HTML, and never really
-    stopped. Two decades of building software, studying mathematics, and trying to
-    understand how systems &mdash; technical and human &mdash; actually work. I've
-    moved through C/C++ and Visual Basic in high school, a decade at university
-    across Psychology and Computer Science, peer-reviewed HCI research, an
-    early-stage stint at SkipTheDishes, and years of freelance consulting across
-    e-commerce, SaaS, and startup product development. Currently building tools
-    for auditable, event-driven agent orchestration.
+    Two decades building software, studying mathematics, and researching how
+    agents &mdash; human and artificial &mdash; form and update models of the
+    world. Psychology Honours, peer-reviewed HCI research, early-stage
+    SkipTheDishes, and years of consulting across SaaS, e-commerce, and startup
+    product development. Currently building infrastructure for auditable,
+    event-driven agent orchestration.
   </p>
+</div>
+
+<h2 class="section-title">Services</h2>
+<div class="services">
+  <div class="service-item">
+    <h3>Architecture Reviews</h3>
+    <p>Evaluate how your frontend, API, database, workflow, and infrastructure layers
+      connect. Identify where the seams are, what&rsquo;s fragile, and how the pieces
+      should fit together. Not &ldquo;learn React&rdquo; but &ldquo;understand why your
+      current stack composition works or doesn&rsquo;t.&rdquo;</p>
+  </div>
+  <div class="service-item">
+    <h3>AI Agent Strategy</h3>
+    <p>How to adopt AI coding agents without losing accountability. Progressive autonomy
+      frameworks, permission policies, audit infrastructure, and multi-agent coordination.
+      Based on a working system I&rsquo;ve built and operate daily across Claude Code,
+      Gemini CLI, and Codex.</p>
+  </div>
+  <div class="service-item">
+    <h3>Tech Stack Assessment</h3>
+    <p>Evaluate whether your stack composition is coherent for your stage and scale.
+      Where the boundaries between services should live, which abstractions are earning
+      their keep, and where complexity is hiding. Security review of AI agent tooling
+      and MCP plugin supply chains.</p>
+  </div>
+</div>
+
+<h2 class="section-title">Writing</h2>
+<div class="writing-list">
+  {% for post in site.posts %}
+  <a href="{{ post.url | prepend: site.baseurl }}" class="writing-item">
+    <span class="writing-title">{{ post.title }}</span>
+    <span class="writing-date">{{ post.date | date: "%B %Y" }}</span>
+  </a>
+  {% endfor %}
 </div>
 
 <h2 class="section-title">Experience</h2>
@@ -163,7 +199,7 @@ layout: landing
 </div>
 
 <h2 class="section-title">Side Projects</h2>
-<div class="bio" style="margin-top: 0;">
+<div class="bio bio-flush">
   <p>
     <strong>NHL Data Graph</strong> &mdash; Full-stack hockey analytics platform
     with trade lineage tracking, game/player/standings ingestion from 5 data
@@ -184,43 +220,26 @@ layout: landing
 </div>
 
 <h2 class="section-title">Background</h2>
-<div class="bio" style="margin-top: 0;">
+<div class="bio bio-flush">
   <p>
-    Born in Calgary, raised in Winnipeg. Started coding at about 13 &mdash; HTML
-    and JavaScript, then Starcraft and Battle.net. Learned Visual Basic and C/C++
-    by 16. Technical support at Convergys at 17. Spent a decade at the University of
-    Manitoba between Psychology (Honours) and Computer Science before finding my
-    way to HCI research. Discovered Clojure and Emacs in 2012 and have been
-    building in that tradition ever since &mdash; TypeScript for the web, Go for
-    systems, org-mode for everything else.
+    Psychology Honours, then Computer Science and HCI research &mdash; two decades
+    asking the same question in different contexts: how do agents form beliefs
+    about their environment, and how do they coordinate when those beliefs diverge?
+    That question started with fish and pigeons in a lab, moved through spatial
+    cognition and 3D visualization research, and now applies to AI coding agents
+    with filesystem access.
   </p>
   <p>
-    I have an amateur interest in mathematics &mdash; abstract algebra,
-    differential geometry, real analysis &mdash; that I'm working on getting
-    back into. I maintain a long-running stream-of-consciousness knowledge base
-    covering everything from epistemology and social cognition to event-driven
-    architecture &mdash; an ongoing experiment in making thinking visible and
-    queryable.
+    I study mathematics &mdash; abstract algebra, differential geometry, real
+    analysis &mdash; because the structures that show up in distributed systems
+    (CRDTs, Merkle trees, session types) are mathematical objects, and understanding
+    them formally changes how I design software. I maintain a living, falsifiable
+    model of my beliefs about how systems work, with confidence scores and a
+    revision protocol. It is the scientific method applied to software engineering.
   </p>
   <p>
-    I believe that writing is how you find out what you actually think, and that
-    the gap between knowing and doing is where most interesting problems live.
+    <a href="{{ "/about/" | prepend: site.baseurl }}" class="text-link">Read the full story &rarr;</a>
   </p>
-</div>
-
-<div class="quotes">
-  <blockquote>
-    &ldquo;Am I creating the circumstances in my life so that I don&rsquo;t have to
-    take ownership of not achieving my potential?&rdquo;
-  </blockquote>
-  <blockquote>
-    &ldquo;I can&rsquo;t help but feel my attempt to be able to wake up whenever I
-    want has just been an elaborate attempt to eat candy as my dinner.&rdquo;
-  </blockquote>
-  <blockquote>
-    &ldquo;The feeling of inspiration of feeling like you&rsquo;re going to change
-    &mdash; it&rsquo;s the thought of an imagined feeling.&rdquo;
-  </blockquote>
 </div>
 
 <footer>
