@@ -4,7 +4,7 @@ title: "From Animal Cognition to Agent Orchestration"
 permalink: /about/
 ---
 
-In 2005, I was in a psychology lab at the University of Manitoba, watching Siamese fighting fish through a one-way mirror and trying to build a virtual model of their territorial behavior. A few years later, I was running pigeon operant conditioning experiments with a Python framework I had written myself, timing reinforcement schedules and recording how the birds updated their behavior in response to changing contingencies. The question driving both projects was deceptively simple: how does an agent form beliefs about its environment, and how does it decide what to do next?
+In 2004, I was in a psychology lab at the University of Manitoba, watching Siamese fighting fish through a one-way mirror and building a 3D tracking system to model their territorial behavior. The question driving the project was deceptively simple: how does an agent form beliefs about its environment, and how does it decide what to do next?
 
 I did not know it at the time, but that question would become the throughline of my entire career.
 
@@ -38,7 +38,7 @@ One thread kept recurring across all of it: the question of how agents -- biolog
 
 ---
 
-In 2023, I co-founded a rent deposit insurance company called ReLease. We built a React and Redux frontend monorepo with MongoDB and Firestore on the backend. I designed state machine workflows using XState, built an audit and observability layer I called the Evidence Envelope pattern, and structured the system around event sourcing -- the principle that current state is a projection over a stream of events, not a thing stored directly.
+In 2023, I joined a rent deposit insurance company called ReLease as Lead Engineer. We built a React and Redux frontend monorepo with MongoDB and Firestore on the backend. I designed state machine workflows using XState, built an audit and observability layer I called the Evidence Envelope pattern, and structured the system around event sourcing -- the principle that current state is a projection over a stream of events, not a thing stored directly.
 
 That principle did not come from a software architecture textbook. It came from the psychology lab. In operant conditioning, the current behavior of the organism is not a fixed property. It is the cumulative result of every reinforcement and punishment event in the organism's history. Change the history, and you change the behavior. The "state" of the organism is not stored anywhere. It is derived from the event stream. When I first encountered event sourcing in software, it felt like coming home.
 
@@ -54,7 +54,7 @@ This is not a project management system. It is not a wiki. It is the scientific 
 
 I am not a psychologist who became a programmer. I am someone who has been asking the same question for twenty years, in different contexts, with increasingly powerful tools. How does an agent form a model of its world? How does it update that model when the world changes? How do multiple agents, each with their own partial and potentially wrong models, coordinate well enough to get something done?
 
-In the psychology lab, the agents were fish and pigeons and the models were inferred from lever presses and territorial displays. In HCI research, the agents were humans and computers and the models were inferred from task completion times and error rates. In industry, the agents were developers and codebases and the models were inferred from git logs and bug reports. Now, the agents are LLMs with filesystem access, and the models are explicit -- written in plain text, versioned in git, tracked with confidence scores, and updated through a formal revision protocol.
+In the psychology lab, the agents were fish and the models were inferred from territorial displays. In HCI research, the agents were humans and computers and the models were inferred from task completion times and error rates. In industry, the agents were developers and codebases and the models were inferred from git logs and bug reports. Now, the agents are LLMs with filesystem access, and the models are explicit -- written in plain text, versioned in git, tracked with confidence scores, and updated through a formal revision protocol.
 
 The tools have changed enormously. The question has not changed at all.
 
