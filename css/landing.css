@@ -119,6 +119,7 @@ body {
   letter-spacing: -0.035em;
   line-height: 1.1;
   margin-bottom: 0.5rem;
+  text-wrap: balance;
   background: var(--gradient-accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -515,6 +516,7 @@ body {
   line-height: 1.15;
   color: var(--text-main);
   margin-bottom: 0.5rem;
+  text-wrap: balance;
 }
 
 .post-meta {
@@ -532,6 +534,7 @@ body {
 
 .post-body p {
   margin-bottom: 1.75rem;
+  text-wrap: pretty;
 }
 
 .post-body h2 {
