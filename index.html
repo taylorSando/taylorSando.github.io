@@ -2,7 +2,7 @@
 layout: landing
 ---
 
-<header class="header">
+<header class="header reveal">
   <h1>Taylor Sando</h1>
   <p class="positioning">I help engineering teams navigate AI-augmented development &mdash;
     architecture reviews, agent orchestration, and system design.
@@ -10,7 +10,7 @@ layout: landing
     and how the pieces should fit together.</p>
 </header>
 
-<div class="links">
+<div class="links reveal">
   <a href="mailto:consulting@taylorsando.com" class="btn btn-cta">Let&rsquo;s Talk</a>
   <a href="https://www.linkedin.com/in/taylor-sando-8aa3a7265/" class="btn btn-outline">LinkedIn</a>
   {% if site.github_username %}
@@ -20,7 +20,7 @@ layout: landing
   <a href="https://sandolab.xyz" class="btn btn-outline">Sandolab</a>
 </div>
 
-<div class="bio">
+<div class="bio reveal">
   <p>
     Two decades building software, studying mathematics, and researching how
     agents &mdash; human and artificial &mdash; form and update models of the
@@ -32,23 +32,23 @@ layout: landing
   </p>
 </div>
 
-<h2 class="section-title">Services</h2>
+<h2 class="section-title reveal" id="services">Services</h2>
 <div class="services">
-  <div class="service-item">
+  <div class="service-item reveal">
     <h3>Architecture Reviews</h3>
     <p>Evaluate how your frontend, API, database, workflow, and infrastructure layers
       connect. Identify where the seams are, what&rsquo;s fragile, and how the pieces
       should fit together. Not &ldquo;learn React&rdquo; but &ldquo;understand why your
       current stack composition works or doesn&rsquo;t.&rdquo;</p>
   </div>
-  <div class="service-item">
+  <div class="service-item reveal">
     <h3>AI Agent Strategy</h3>
     <p>How to adopt AI coding agents without losing accountability. Progressive autonomy
       frameworks, permission policies, audit infrastructure, and multi-agent coordination.
       Based on a working system I&rsquo;ve built and operate daily across Claude Code,
       Gemini CLI, and Codex.</p>
   </div>
-  <div class="service-item">
+  <div class="service-item reveal">
     <h3>Tech Stack Assessment</h3>
     <p>Evaluate whether your stack composition is coherent for your stage and scale.
       Where the boundaries between services should live, which abstractions are earning
@@ -57,8 +57,8 @@ layout: landing
   </div>
 </div>
 
-<h2 class="section-title">Writing</h2>
-<div class="writing-list">
+<h2 class="section-title reveal" id="writing">Writing</h2>
+<div class="writing-list reveal">
   {% for post in site.posts %}
   <a href="{{ post.url | prepend: site.baseurl }}" class="writing-item">
     <span class="writing-title">{{ post.title }}</span>
@@ -67,9 +67,9 @@ layout: landing
   {% endfor %}
 </div>
 
-<h2 class="section-title">Experience</h2>
+<h2 class="section-title reveal" id="experience">Experience</h2>
 <div class="journey-list">
-  <div class="journey-item">
+  <div class="journey-item reveal">
     <div class="journey-meta">
       <strong>Control Plane</strong>
       <span>2025 &ndash; present</span>
@@ -83,7 +83,7 @@ layout: landing
     </div>
   </div>
 
-  <div class="journey-item">
+  <div class="journey-item reveal">
     <div class="journey-meta">
       <strong>Cios / ReLease</strong>
       <span>2023 &ndash; 2026</span>
@@ -99,7 +99,7 @@ layout: landing
     </div>
   </div>
 
-  <div class="journey-item">
+  <div class="journey-item reveal">
     <div class="journey-meta">
       <strong>Datomar Labs</strong>
       <span>2019 &ndash; 2023</span>
@@ -118,7 +118,7 @@ layout: landing
     </div>
   </div>
 
-  <div class="journey-item">
+  <div class="journey-item reveal">
     <div class="journey-meta">
       <strong>Freelance &amp; Contract</strong>
       <span>2012 &ndash; 2019</span>
@@ -139,7 +139,7 @@ layout: landing
     </div>
   </div>
 
-  <div class="journey-item">
+  <div class="journey-item reveal">
     <div class="journey-meta">
       <strong>SkipTheDishes</strong>
       <span>2014</span>
@@ -152,7 +152,7 @@ layout: landing
     </div>
   </div>
 
-  <div class="journey-item">
+  <div class="journey-item reveal">
     <div class="journey-meta">
       <strong>University of Manitoba</strong>
       <span>B.Sc. Computer Science &mdash; 2007 &ndash; 2013</span>
@@ -170,7 +170,7 @@ layout: landing
     </div>
   </div>
 
-  <div class="journey-item">
+  <div class="journey-item reveal">
     <div class="journey-meta">
       <strong>University of Manitoba</strong>
       <span>B.Sc. Psychology &mdash; 2002 &ndash; 2007</span>
@@ -189,7 +189,7 @@ layout: landing
   </div>
 </div>
 
-<div class="publications">
+<div class="publications reveal">
   <h3 class="subsection-title">Publications</h3>
   <ul>
     <li>
@@ -209,63 +209,72 @@ layout: landing
   </ul>
 </div>
 
-<h2 class="section-title">Sandolab &mdash; Applied Research Lab</h2>
-<div class="bio bio-flush">
-  <p>
-    <a href="https://sandolab.xyz" class="text-link"><strong>sandolab.xyz</strong></a>
-    &mdash; My applied research lab, housing six active products and ten research
-    directions spanning AI agent infrastructure, augmented reality, sports analytics,
-    and computational epistemics. Corporate registration pending.
-  </p>
-  <p>
-    <strong><a href="https://ar.sandolab.xyz" class="text-link">SandoLens</a></strong>
-    &mdash; AI-augmented reality for code and field work. Contextual overlays
-    projected into your field of vision: developer HUD (agent status, build pipelines,
-    voice commands) and construction site mode (checklists, part identification,
-    crew translation, compliance documentation).
-  </p>
-  <p>
-    <strong>Control Plane</strong> &mdash; Monorepo for auditable multi-agent
-    orchestration. Mesh (file watcher + CRDT versioning + LLM summaries),
-    Orchestrator (multi-model task routing via git worktrees), OCC (declarative
-    permission engine), Console (web dashboard + API gateway). Progressive
-    autonomy: agents earn trust incrementally from supervised to fully autonomous.
-  </p>
-  <p>
-    <strong>NHL Data Graph</strong> &mdash; The only platform tracking complete
-    trade trees and computing cumulative games-played impact across asset
-    descendants. Real-time ingestion, AI-powered sprite analysis, content-ready
-    outputs for creators and teams.
-  </p>
-  <p>
-    <strong>Voice Tools</strong> &mdash; On-device STT/TTS (faster-whisper
-    large-v3 on RTX 3090 + Piper). Sub-second transcription, GPU-resident model,
-    integrated into Emacs and agent workflows. Your voice never leaves your machine.
-  </p>
+<h2 class="section-title reveal" id="lab">Sandolab &mdash; Applied Research Lab</h2>
+<div class="lab-grid">
+  <a href="https://ar.sandolab.xyz" class="lab-card reveal">
+    <div class="lab-card-tag tag-cyan">Augmented Reality</div>
+    <h3>SandoLens</h3>
+    <p>AI overlays projected into your field of vision. Developer HUD shows
+      agent status, build pipelines, and voice commands. Field mode handles
+      construction checklists, part identification, crew translation, and
+      compliance documentation.</p>
+  </a>
+  <div class="lab-card reveal">
+    <div class="lab-card-tag tag-violet">Agent Infrastructure</div>
+    <h3>Control Plane</h3>
+    <p>Monorepo for auditable multi-agent orchestration. Mesh (file watcher +
+      CRDT versioning + LLM summaries), Orchestrator (multi-model task routing
+      via git worktrees), OCC (declarative permission engine), Console (web
+      dashboard + API gateway). Progressive autonomy: agents earn trust
+      incrementally.</p>
+  </div>
+  <div class="lab-card reveal">
+    <div class="lab-card-tag tag-green">Sports Analytics</div>
+    <h3>NHL Data Graph</h3>
+    <p>The only platform tracking complete trade trees and computing cumulative
+      games-played impact across asset descendants. Real-time ingestion,
+      AI-powered sprite analysis, content-ready outputs for creators and teams.</p>
+  </div>
+  <div class="lab-card reveal">
+    <div class="lab-card-tag tag-purple">Voice &amp; Input</div>
+    <h3>Voice Tools</h3>
+    <p>On-device STT/TTS (faster-whisper large-v3 on RTX 3090 + Piper).
+      Sub-second transcription, GPU-resident model, integrated into Emacs and
+      agent workflows. Your voice never leaves your machine.</p>
+  </div>
 </div>
 
-<h2 class="section-title">Research Directions</h2>
-<div class="bio bio-flush">
-  <p>
-    Active research across computational epistemics, agent governance, and
-    category theory applications. Full details at
-    <a href="https://sandolab.xyz#research" class="text-link">sandolab.xyz/research</a>.
-  </p>
-  <p>
-    <strong>Epistemic Circles</strong> &mdash; Knowledge modeled as recursive
-    hierarchies using Ologs for path equivalence and Sheaves for global consistency.
-    <strong>Chronotopology</strong> &mdash; Drift detection via persistent homology.
-    <strong>Progressive Autonomy Trust Calculus</strong> &mdash; Formal framework
-    for agents earning autonomy incrementally.
-    <strong>Categorical AR Learning Overlays</strong> &mdash; Functors and sheaf
-    cohomology for adaptive tutorial guidance.
-    <strong>Belief Drift Prediction</strong> &mdash; Epistemic health scoring
-    for multi-agent systems.
-  </p>
+<div class="lab-cta reveal">
+  <p>6 products, 10 research directions, and a full architecture at
+    <a href="https://sandolab.xyz" class="text-link">sandolab.xyz</a></p>
 </div>
 
-<h2 class="section-title">Background</h2>
-<div class="bio bio-flush">
+<h2 class="section-title reveal">Research Directions</h2>
+<div class="research-list">
+  <div class="research-item reveal">
+    <strong>Epistemic Circles</strong>
+    <span>Knowledge as recursive hierarchies using Ologs for path equivalence and Sheaves for global consistency</span>
+  </div>
+  <div class="research-item reveal">
+    <strong>Chronotopology</strong>
+    <span>Drift detection via persistent homology &mdash; measuring topological change, not timestamps</span>
+  </div>
+  <div class="research-item reveal">
+    <strong>Progressive Autonomy Trust Calculus</strong>
+    <span>Formal framework for agents earning autonomy incrementally across three trust tiers</span>
+  </div>
+  <div class="research-item reveal">
+    <strong>Categorical AR Learning Overlays</strong>
+    <span>Functors and sheaf cohomology for adaptive tutorial guidance on closed-source software</span>
+  </div>
+  <div class="research-item reveal">
+    <strong>Belief Drift Prediction</strong>
+    <span>Epistemic health scoring for multi-agent systems &mdash; predicting failures from model divergence</span>
+  </div>
+</div>
+
+<h2 class="section-title reveal">Background</h2>
+<div class="bio bio-flush reveal">
   <p>
     B.Sc. Psychology (neuroscience, behavioral research, animal cognition), then
     B.Sc. Computer Science and HCI research &mdash; two decades asking the same
