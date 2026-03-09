@@ -209,24 +209,58 @@ layout: landing
   </ul>
 </div>
 
-<h2 class="section-title">Side Projects</h2>
+<h2 class="section-title">Sandolab &mdash; Applied Research Lab</h2>
 <div class="bio bio-flush">
   <p>
-    <strong>NHL Data Graph</strong> &mdash; Full-stack hockey analytics platform
-    with trade lineage tracking, game/player/standings ingestion from 5 data
-    sources, and content-ready analytics outputs. Turborepo monorepo with a
-    25+ page web UI, 24-table Postgres schema on GCP Cloud SQL, Cloud Run
-    deployment with CI/CD. A continuation of hockey data work that started
-    with TheHockeyPedia in 2008.
+    <a href="https://sandolab.xyz" class="text-link"><strong>sandolab.xyz</strong></a>
+    &mdash; My applied research lab, housing six active products and ten research
+    directions spanning AI agent infrastructure, augmented reality, sports analytics,
+    and computational epistemics. Corporate registration pending.
   </p>
   <p>
-    <strong>Sandolab</strong> &mdash; Spotify playlist manager that tracks unplayed
-    songs and auto-removes them when played. Next.js + Vercel.
+    <strong><a href="https://ar.sandolab.xyz" class="text-link">SandoLens</a></strong>
+    &mdash; AI-augmented reality for code and field work. Contextual overlays
+    projected into your field of vision: developer HUD (agent status, build pipelines,
+    voice commands) and construction site mode (checklists, part identification,
+    crew translation, compliance documentation).
   </p>
   <p>
-    <strong>Voice Tools</strong> &mdash; Local speech-to-text and text-to-speech
-    running faster-whisper on a RTX 3090. Entirely on-device, integrated into
-    Emacs.
+    <strong>Control Plane</strong> &mdash; Monorepo for auditable multi-agent
+    orchestration. Mesh (file watcher + CRDT versioning + LLM summaries),
+    Orchestrator (multi-model task routing via git worktrees), OCC (declarative
+    permission engine), Console (web dashboard + API gateway). Progressive
+    autonomy: agents earn trust incrementally from supervised to fully autonomous.
+  </p>
+  <p>
+    <strong>NHL Data Graph</strong> &mdash; The only platform tracking complete
+    trade trees and computing cumulative games-played impact across asset
+    descendants. Real-time ingestion, AI-powered sprite analysis, content-ready
+    outputs for creators and teams.
+  </p>
+  <p>
+    <strong>Voice Tools</strong> &mdash; On-device STT/TTS (faster-whisper
+    large-v3 on RTX 3090 + Piper). Sub-second transcription, GPU-resident model,
+    integrated into Emacs and agent workflows. Your voice never leaves your machine.
+  </p>
+</div>
+
+<h2 class="section-title">Research Directions</h2>
+<div class="bio bio-flush">
+  <p>
+    Active research across computational epistemics, agent governance, and
+    category theory applications. Full details at
+    <a href="https://sandolab.xyz#research" class="text-link">sandolab.xyz/research</a>.
+  </p>
+  <p>
+    <strong>Epistemic Circles</strong> &mdash; Knowledge modeled as recursive
+    hierarchies using Ologs for path equivalence and Sheaves for global consistency.
+    <strong>Chronotopology</strong> &mdash; Drift detection via persistent homology.
+    <strong>Progressive Autonomy Trust Calculus</strong> &mdash; Formal framework
+    for agents earning autonomy incrementally.
+    <strong>Categorical AR Learning Overlays</strong> &mdash; Functors and sheaf
+    cohomology for adaptive tutorial guidance.
+    <strong>Belief Drift Prediction</strong> &mdash; Epistemic health scoring
+    for multi-agent systems.
   </p>
 </div>
 
@@ -255,5 +289,5 @@ layout: landing
 </div>
 
 <footer>
-  <p>&copy; {{ site.time | date: "%Y" }} Taylor Sando &middot; Winnipeg, Canada</p>
+  <p>&copy; {{ site.time | date: "%Y" }} Taylor Sando &middot; Calgary, AB</p>
 </footer>
