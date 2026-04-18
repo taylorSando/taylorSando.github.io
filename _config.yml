@@ -9,7 +9,7 @@
 title: Taylor Sando
 email: taylor.sando@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I help engineering teams navigate AI-augmented development. Architecture reviews, agent orchestration strategy, and system design. Based in Winnipeg.
+  I help engineering teams navigate AI-augmented development. Current work spans control-plane ontology and knowledge curation, consulting, community-platform exploration, and payment-ontology research. Based in Winnipeg.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.taylorsando.com" # the base hostname & protocol for your site
 twitter_username: taylorSando16

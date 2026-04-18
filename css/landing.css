@@ -219,6 +219,18 @@ body {
   transition-delay: 160ms;
 }
 
+.focus-grid .reveal:nth-child(2) {
+  transition-delay: 80ms;
+}
+
+.focus-grid .reveal:nth-child(3) {
+  transition-delay: 160ms;
+}
+
+.focus-grid .reveal:nth-child(4) {
+  transition-delay: 240ms;
+}
+
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .reveal {
@@ -430,6 +442,30 @@ body {
 .service-item p {
   color: var(--text-muted);
   font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ─── Current Focus ─── */
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.focus-note {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  background: var(--surface-subtle);
+  color: var(--text-muted);
+  font-size: 0.92rem;
   line-height: 1.7;
 }
 
