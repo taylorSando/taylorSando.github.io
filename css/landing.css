@@ -339,6 +339,39 @@ body {
   }
 }
 
+/* ─── Proof Grid ─── */
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.proof-card {
+  padding: 1.1rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  background: var(--surface-subtle);
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.proof-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-color);
+  margin-bottom: 0.55rem;
+}
+
+@media (max-width: 720px) {
+  .proof-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ─── Bio ─── */
 .bio {
   margin-bottom: 3rem;
@@ -443,6 +476,21 @@ body {
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.7;
+}
+
+.service-meta,
+.service-detail {
+  margin-top: 0.85rem;
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.service-meta {
+  color: var(--text-main);
+}
+
+.service-detail {
+  color: var(--text-light);
 }
 
 /* ─── Current Focus ─── */
