@@ -28,11 +28,12 @@ The stacks and systems change from project to project, but the throughline has m
 
 ---
 
-My current work is centered on a private control-plane stack and the public notes and experiments around it. The core internal repos are Mesh, Orchestrator, OCC, and Console. Around that, I keep public or semi-public work in `taylorsando.com`, `sandolab`, `winwar`, `payment-ontology`, `community-platform`, `sando-tracker`, `learning-overlay`, `personal-usability`, `qedviz`, and `voice-tools`.
+My current work is centered on a private control-plane stack and the public notes and experiments around it. The core internal repos are Mesh, Orchestrator, OCC, and Console. Around that, I keep public or semi-public work in `taylorsando.com`, `sandolab`, `winwar`, `digital-ontology`, `payment-ontology`, `community-platform`, `sando-tracker`, `learning-overlay`, `personal-usability`, `qedviz`, and `voice-tools`.
 
 The public focus right now is narrower than the private work:
 
 - control-plane tooling and knowledge curation
+- digital-ontology research
 - payment-ontology research
 - community-platform exploration
 - selected software experiments such as Sandolab, WinWar, sando-tracker, learning-overlay, personal-usability, and qedviz
