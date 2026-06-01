@@ -5,14 +5,15 @@ layout: landing
 <header class="header reveal">
   <h1>Taylor Sando</h1>
   <p class="positioning">I help engineering teams make AI-assisted systems
-    reliable enough to ship. My work is control-plane reviews, agent
-    orchestration strategy, and architecture guidance for teams that need
-    clearer governance, safer autonomy, and faster technical decisions.</p>
+    reliable enough to ship. Current work centers on control-plane reviews,
+    agent workflow architecture, and product-system design around Control
+    Plane and Sitelayer.</p>
 </header>
 
 <div class="links reveal">
-  <a href="mailto:consulting@taylorsando.com?subject=Control-plane%20review" class="btn btn-cta">Book a control-plane review</a>
-  <a href="#services" class="btn">See offers</a>
+  <a href="{{ "/work/" | prepend: site.baseurl }}" class="btn btn-cta">Working with me</a>
+  <a href="mailto:consulting@taylorsando.com?subject=Control-plane%20review" class="btn">Email consulting</a>
+  <a href="#services" class="btn">Common work</a>
   <a href="https://www.linkedin.com/in/taylor-sando-8aa3a7265/" class="btn btn-outline">LinkedIn</a>
   {% if site.github_username %}
   <a href="https://github.com/{{ site.github_username }}" class="btn btn-outline">GitHub</a>
@@ -31,7 +32,7 @@ layout: landing
   </div>
   <div class="proof-card">
     <div class="proof-kicker">Why trust this</div>
-    <p>Control-plane tooling across Mesh, Orchestrator, OCC, and Console, product engineering at ReLease/Cios, and earlier HCI research at ACM APGV and IEEE PacificVis.</p>
+    <p>Control-plane tooling across Mesh, Orchestrator, OCC, and Console, the active Sitelayer product loop, product engineering at ReLease/Cios, and earlier HCI research at ACM APGV and IEEE PacificVis.</p>
   </div>
 </div>
 
@@ -62,13 +63,13 @@ layout: landing
   <p>The research and product threads lower on the page are proof of range. The top of the funnel is simpler: if you are shipping AI-assisted systems and want a clearer control plane, this is the part to pay attention to.</p>
 </div>
 
-<h2 class="section-title reveal" id="services">Offers</h2>
+<h2 class="section-title reveal" id="services">Common Work</h2>
 <div class="services">
   <div class="service-item reveal">
     <h3>AI Agent Readiness Review</h3>
     <p>For teams adopting coding agents or workflow automation but lacking clear boundaries. I map the failure surfaces, approval paths, and missing control-plane pieces before complexity hardens.</p>
     <p class="service-meta"><strong>Best fit:</strong> shipping teams with AI in internal or customer-facing workflows.</p>
-    <p class="service-detail"><strong>Deliverable:</strong> written review, risk map, and prioritized next steps in about 2 weeks. Starts at $3,500.</p>
+    <p class="service-detail"><strong>Deliverable:</strong> written review, risk map, and prioritized next steps.</p>
   </div>
   <div class="service-item reveal">
     <h3>Control-Plane Audit</h3>
@@ -80,11 +81,11 @@ layout: landing
     <h3>Embedded Advisory</h3>
     <p>For founders and engineering leads who want ongoing help shaping architecture, agent policy, and execution decisions while the system is still moving.</p>
     <p class="service-meta"><strong>Best fit:</strong> teams making repeated control-plane and AI adoption decisions under delivery pressure.</p>
-    <p class="service-detail"><strong>Deliverable:</strong> recurring decision support, reviews, and implementation guidance over 3 to 6 months. Typical range: $10K to $15K per month.</p>
+    <p class="service-detail"><strong>Deliverable:</strong> recurring decision support, reviews, and implementation guidance while the system is moving.</p>
   </div>
 </div>
 <div class="focus-note reveal">
-  <p>If you already know the problem and need implementation help, ask about a build sprint after the review. I usually prefer an architecture read before writing the implementation plan.</p>
+  <p>If you already know the problem and need implementation help, start with the <a href="{{ "/work/" | prepend: site.baseurl }}" class="text-link">Working With Me</a> page. I usually prefer an architecture read before writing the implementation plan.</p>
 </div>
 
 <h2 class="section-title reveal" id="writing">Writing</h2>
@@ -221,9 +222,9 @@ layout: landing
   <a href="https://sandolab.xyz/ar" class="lab-card reveal">
     <div class="lab-card-tag tag-cyan">Attention Systems</div>
     <h3>Tracking &amp; Overlay Systems</h3>
-    <p>Work across sando-tracker, learning-overlay, personal-usability, and
-      QEDViz: monitor-focus experiments, overlay surfaces, proof/study tooling,
-      and desktop attention systems.</p>
+    <p>Work across sando-tracker, learning-overlay, Learn, and
+      personal-usability: monitor-focus experiments, overlay surfaces, learning
+      workflows, and desktop attention systems.</p>
   </a>
   <div class="lab-card reveal">
     <div class="lab-card-tag tag-violet">Agent Infrastructure</div>
@@ -231,6 +232,13 @@ layout: landing
     <p>Current control-plane repos spanning Mesh, Orchestrator, OCC, and
       Console: file activity tracking, agent routing, policy tooling, and
       operator surfaces.</p>
+  </div>
+  <div class="lab-card reveal">
+    <div class="lab-card-tag tag-green">Product Systems</div>
+    <h3>Sitelayer</h3>
+    <p>Construction operations platform for blueprint takeoff, estimates, crew
+      scheduling, rentals, inventory, QBO sync, and feedback capture tied back
+      to reviewable work.</p>
   </div>
   <div class="lab-card reveal">
     <div class="lab-card-tag tag-purple">Ontology Research</div>
@@ -252,10 +260,11 @@ layout: landing
       analytics surfaces.</p>
   </a>
   <div class="lab-card reveal">
-    <div class="lab-card-tag tag-purple">Proof Tools</div>
-    <h3>QEDViz</h3>
-    <p>Proof visualization and study tooling with shared proof routes,
-      compute/verification services, and Cloud Run deployment paths.</p>
+    <div class="lab-card-tag tag-green">Learning Workbench</div>
+    <h3>Learn</h3>
+    <p>Standalone Mesh-backed personal learning workbench: Today queue,
+      library and PDF reader, spaced recall, glossary, ontology atlas, proof
+      workflows, sessions, and diagnostics.</p>
   </div>
 </div>
 
@@ -279,8 +288,8 @@ layout: landing
     <span>Mapping payment entities, flows, and state transitions before implementation details hide them</span>
   </div>
   <div class="research-item reveal">
-    <strong>Community platform</strong>
-    <span>Neighborhood demand aggregation, local grocer workflows, and cooperative logistics</span>
+    <strong>Sitelayer capture loop</strong>
+    <span>Product trace, capture sessions, support packets, and context-work handoffs in a real construction-ops product</span>
   </div>
   <div class="research-item reveal">
     <strong>Tracking &amp; overlay systems</strong>
@@ -291,8 +300,8 @@ layout: landing
     <span>Legality, consequence, replay, inspection, and tutorialization for a complex strategy-game surface</span>
   </div>
   <div class="research-item reveal">
-    <strong>Proof &amp; study tooling</strong>
-    <span>QEDViz work on proof routes, study surfaces, and verification workflows</span>
+    <strong>Learn workbench</strong>
+    <span>Reading, recall, glossary, ontology, proof, session, and diagnostics surfaces connected to Mesh learning APIs</span>
   </div>
   <div class="research-item reveal">
     <strong>Belief drift</strong>
@@ -308,10 +317,10 @@ layout: landing
     PacificVis before moving into consulting and product engineering.
   </p>
   <p>
-    Current work is split across consulting, control-plane tooling,
-    digital-ontology and payment-ontology notes, community-platform
-    exploration, and public experiments including sandolab.xyz,
-    winwar.sandolab.xyz, and hockeypedia.org.
+    Current work is split across consulting, control-plane tooling, Sitelayer,
+    digital-ontology and payment-ontology notes, capture/product-trace research,
+    and public experiments including sandolab.xyz, winwar.sandolab.xyz, and
+    hockeypedia.org.
   </p>
   <p>
     <a href="{{ "/about/" | prepend: site.baseurl }}" class="text-link">Read the full story &rarr;</a>
