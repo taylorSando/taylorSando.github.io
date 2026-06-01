@@ -1010,6 +1010,89 @@ footer {
   outline: none;
 }
 
+/* ─── Proof / Build Log ─── */
+.proof-stats {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2.5rem 0 3rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  background: var(--surface-subtle);
+}
+
+@media (max-width: 640px) {
+  .proof-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+.proof-stat {
+  text-align: center;
+}
+
+.proof-stat-num {
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--accent-color);
+  font-variant-numeric: tabular-nums;
+}
+
+.proof-stat-label {
+  font-size: 0.72rem;
+  color: var(--text-light);
+  margin-top: 0.3rem;
+  line-height: 1.35;
+}
+
+.proj-commits {
+  font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, monospace;
+  font-size: 0.72rem;
+  color: var(--accent-color);
+  margin-bottom: 0.55rem;
+  letter-spacing: 0.01em;
+}
+
+.also-note {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  margin-top: 0.85rem;
+  font-style: italic;
+}
+
+/* Keep lab-card / grid styling intact when rendered inside .post-body */
+.post-body .lab-grid {
+  margin: 1.5rem 0 0.5rem;
+  padding-left: 0;
+}
+
+.post-body .lab-card {
+  margin: 0;
+}
+
+.post-body .lab-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.post-body .lab-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.post-body .proof-stats {
+  margin-left: 0;
+}
+
 /* ─── Mobile ─── */
 @media (max-width: 640px) {
   .landing-container {
