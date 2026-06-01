@@ -718,6 +718,17 @@ body {
   display: block;
 }
 
+.lab-card-media {
+  display: block;
+  width: 100%;
+  height: 8.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  object-fit: cover;
+  object-position: top left;
+}
+
 .lab-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
