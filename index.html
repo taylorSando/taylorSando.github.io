@@ -4,22 +4,24 @@ layout: landing
 
 <header class="header reveal">
   <h1>Taylor Sando</h1>
-  <p class="positioning">I help engineering teams make AI-assisted systems
-    reliable enough to ship. Current work centers on control-plane reviews,
-    agent workflow architecture, and product-system design around Control
-    Plane and Sitelayer.</p>
+  <p class="positioning">I make AI-agent systems reliable enough to ship. I run a
+    supervised multi-agent development fleet &mdash; Claude, Codex, and Gemini
+    behind a scheduler, a merge-queue, and a verify gate. In the last six months
+    it shipped eight live applications and merged 10,000+ reviewed commits. I
+    audit whether your agent setup can ship safely, or build the missing
+    review-and-handoff layer with you.</p>
 </header>
 
 <div class="links reveal">
-  <a href="{{ "/work/" | prepend: site.baseurl }}" class="btn btn-cta">Working with me</a>
+  <a href="https://cal.com/taylorsando/control-plane-review" class="btn btn-cta" target="_blank" rel="noopener noreferrer">Book a control-plane review</a>
   <a href="mailto:consulting@taylorsando.com?subject=Control-plane%20review" class="btn">Email consulting</a>
-  <a href="#services" class="btn">Common work</a>
+  <a href="{{ "/work/" | prepend: site.baseurl }}" class="btn">Working with me</a>
   <a href="{{ "/proof/" | prepend: site.baseurl }}" class="btn">Six-month build log</a>
+  <a href="https://sandolab.xyz" class="btn btn-outline">Sandolab &mdash; see it live</a>
   <a href="https://www.linkedin.com/in/taylor-sando-8aa3a7265/" class="btn btn-outline">LinkedIn</a>
   {% if site.github_username %}
   <a href="https://github.com/{{ site.github_username }}" class="btn btn-outline">GitHub</a>
   {% endif %}
-  <a href="https://sandolab.xyz" class="btn btn-outline">Sandolab</a>
 </div>
 
 <div class="proof-grid reveal">
