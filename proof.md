@@ -5,14 +5,14 @@ permalink: /proof/
 excerpt: "A git-mined record of the last six months: 11,000+ commits across 30+ repositories — control-plane infrastructure, Sitelayer, Hockeypedia, and the systems around them."
 ---
 
-This is the long version of "what have you actually built." Every figure below is mined directly from git history — commits since December 2025 — across more than thirty active repositories. The short version of the work lives on the [home page](/); this page is the evidence behind it.
+This is the long version of "what have you actually built." Every figure below is mined directly from git history — commits since December 2025, as of June 2026 — across more than thirty active repositories. The short version of the work lives on the [home page](/); this page is the evidence behind it.
 
 The throughline is a single operator running a self-hosted **control plane** that schedules, supervises, and audits a fleet of coding and research agents — and then using that control plane to ship real products on top of it.
 
 <div class="proof-stats">
   <div class="proof-stat"><div class="proof-stat-num">11,000+</div><div class="proof-stat-label">Git commits</div></div>
   <div class="proof-stat"><div class="proof-stat-num">30+</div><div class="proof-stat-label">Active repositories</div></div>
-  <div class="proof-stat"><div class="proof-stat-num">8+</div><div class="proof-stat-label">Live applications</div></div>
+  <div class="proof-stat"><div class="proof-stat-num">8+</div><div class="proof-stat-label">Deployed applications</div></div>
   <div class="proof-stat"><div class="proof-stat-num">6</div><div class="proof-stat-label">Self-hosted machines</div></div>
   <div class="proof-stat"><div class="proof-stat-num">1</div><div class="proof-stat-label">Operator + agent fleet</div></div>
 </div>
@@ -29,16 +29,16 @@ Public and deployed work is described in full. Private systems are described at 
     <p>A self-hosted AI orchestration monorepo: a Go/Postgres scheduler, a Chrome browser-automation extension, a multi-agent fleet manager, and a React operator dashboard that route work across Claude, Codex, Gemini, and Antigravity CLI runners. Ships a merge-queue lander with an atomic verify-gate, a counsel-of-models decision system, Ed25519 component auth, a Postgres-backed personal event log, 27 architecture decision records, and 324+ migrations.</p>
   </div>
   <a class="lab-card" href="https://sitelayer.sandolab.xyz" target="_blank" rel="noopener">
-    <div class="lab-card-tag tag-green">Product &middot; live</div>
+    <div class="lab-card-tag tag-green">Product &middot; deployed (pre-pilot)</div>
     <h3>Sitelayer</h3>
     <div class="proj-commits">~1,302 commits &middot; sitelayer.sandolab.xyz</div>
-    <p>A full bid-to-closeout construction-operations platform for exterior cladding contractors, hardened from prototype to production in roughly two months: blueprint PDF takeoff on a PDFium canvas, AI quantity capture, 15 deterministic workflow state machines, row-level security, QuickBooks OAuth sync with HMAC webhooks, and immutable-image CI/CD with 136 sequential migrations.</p>
+    <p>A full bid-to-closeout construction-operations platform for exterior cladding contractors, hardened from prototype to a deployed, pilot-stage platform in roughly two months: blueprint PDF takeoff on a PDFium canvas, AI quantity capture, 20 deterministic workflow state machines, row-level security, QuickBooks OAuth sync with HMAC webhooks, and immutable-image CI/CD with a checksummed, forward-only migration history.</p>
   </a>
   <a class="lab-card" href="https://hockeypedia.org" target="_blank" rel="noopener">
     <div class="lab-card-tag tag-green">Sports Analytics &middot; live</div>
     <h3>Hockeypedia</h3>
     <div class="proj-commits">~735 commits &middot; hockeypedia.org</div>
-    <p>A production NHL intelligence platform built from scratch to live in one quarter: a 14-adapter Go ingest pipeline, six materialized views (one dropped a query from 3.7s to 1ms), a trade-lineage graph, a fantasy team-builder with live cap math, 10 systemd timers, and a Playwright visual-regression harness with a GPU review lane.</p>
+    <p>A deployed NHL analytics platform built from scratch to live in one quarter: a 14-adapter Go ingest pipeline, six materialized views (one dropped a query from 3.7s to 1ms), a trade-lineage graph, a fantasy team-builder with live cap math, 10 systemd timers, and a Playwright visual-regression harness with a GPU review lane.</p>
   </a>
 </div>
 
@@ -90,13 +90,13 @@ The control plane was deliberately decomposed into standalone, versioned reposit
     <p>A chess trainer built in 18 days: a pool of four warm Stockfish engines, multi-model LLM move coaching with a response cache, an adaptive puzzle picker, and a sandboxed system service with backup hooks.</p>
   </a>
   <div class="lab-card">
-    <div class="lab-card-tag tag-green">Pilot</div>
+    <div class="lab-card-tag tag-green">Internal</div>
     <h3>chat-pool</h3>
     <div class="proj-commits">49 commits &middot; private</div>
     <p>A self-hosted multi-user AI chat service for a small trusted group, with per-user spend caps enforced at the proxy and a subscription-ledger / route-decision API.</p>
   </div>
   <div class="lab-card">
-    <div class="lab-card-tag tag-green">Early pilot</div>
+    <div class="lab-card-tag tag-green">Prototype</div>
     <h3>community-platform</h3>
     <div class="proj-commits">10 commits &middot; private</div>
     <p>An early community-logistics co-op pilot with a price-intelligence module to aggregate household demand and negotiate wholesale pricing.</p>
